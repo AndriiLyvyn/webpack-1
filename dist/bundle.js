@@ -374,7 +374,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body {\n  background-color: green;\n}\nbody h1 {\n  color: blue;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "body {\n  background: linear-gradient(45deg, blue, tomato);\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n}\nbody h1 {\n  color: lightgreen;\n}\n\n.wrapper h1 {\n  color: blue;\n}\n.wrapper h2 {\n  color: chocolate;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -584,7 +584,7 @@ const nameExport = (__webpack_require__(1).name);
 console.log(sumExport(1, 2));
 let heading = document.querySelector("h1");
 let sumValue = sumExport(1, 10);
-let nameLog = nameExport("Dawid");
+let nameLog = nameExport("Andrii");
 let hello = document.querySelector("h2");
 heading.textContent = `Wynik dodawania ${sumValue}`;
 hello.textContent = ` Hello ${nameLog}`;

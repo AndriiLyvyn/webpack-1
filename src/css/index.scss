@@ -1,10 +1,50 @@
+@import'./variables.scss';
+@import'./mixine.scss';
+
+
+
+
+
 body {
 background:linear-gradient(45deg , blue,tomato);
 background-repeat: no-repeat;
 background-attachment:fixed;
-h1{color: lightgreen;}
-}
-h1{
-font-family: sans-serif;
+h1{color:$main-color}
 }
 
+.wrapper{
+     h1{ color:$link-color; font-size: $main-font-size; }
+     h2{ color:chocolate;}
+}
+.carousel{
+     &__title{
+          font-size: $main-font-size;
+          color:$link-color;
+     }
+     &__subtitle{
+          color: wheat;
+     }
+     &__link{
+          &--active{
+               color: green;
+          }
+     
+          color: rgb(27, 155, 84);
+     &:hover{
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          font-size: 6em;
+          color: yellow;
+     }
+
+     }
+}
+
+.class1{
+     @include wyglondButtona(120px,70px,16px);
+}
+
+.class2{
+     @include wyglondButtona(100px,55px,22px);
+
+     background-color: rgb(17, 155, 201);
+}
