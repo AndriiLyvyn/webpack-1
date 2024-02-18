@@ -1,0 +1,11 @@
+const sumExport = require("./sum").suma;
+const nameExport = require("./sum").name;
+import style from "./css/index.scss";
+console.log(sumExport(1, 2));
+let heading = document.querySelector("h1");
+let sumValue = sumExport(1, 10);
+let nameLog = nameExport("Andrii");
+let hello = document.querySelector("h2");
+heading.textContent = `Wynik dodawania ${sumValue}`;
+hello.textContent = ` Hello ${nameLog}`;
+console.log(nameLog);
